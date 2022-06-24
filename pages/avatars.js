@@ -1,9 +1,9 @@
 import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
 import Link from 'next/link';
-import { list_data } from './data';
 import stylesAvatar from "@/styles/avatars.module.css"
 import React, { useEffect, useState } from "react";
+import { list_data } from './api/data';
 
 
 export default function Home() {
