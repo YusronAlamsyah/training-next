@@ -1,9 +1,9 @@
 import React from 'react'
 
-function hello() {
+function Hello() {
   return (
     <h3>Hello Component</h3>
   )
 }
 
-export default hello
+export default Hello

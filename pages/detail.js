@@ -7,7 +7,7 @@ import Head from 'next/head'
 import dynamic from "next/dynamic";
 
 
-function detail() {
+function Detail() {
     const { query } = useRouter();
     const [isDynamic, setDynamic] = useState(false);
     const HelloComponent = dynamic(() => import('@/components/hello'), {
@@ -109,4 +109,4 @@ function detail() {
     )
 }
 
-export default detail
+export default Detail
