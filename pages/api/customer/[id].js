@@ -1,7 +1,8 @@
-import { list_customer } from "../../customer";
+import { List_customer } from "../../customer";
+
 
 export default function handler({query:{id}}, res) {
-    const filtered = list_customer.filter((customer) => customer.id == id);
+    const filtered = List_customer.filter((customer) => customer.id == id);
     if (filtered.length > 0){
         res.status(200).json(filtered)
     }else{

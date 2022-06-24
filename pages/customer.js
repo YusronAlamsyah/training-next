@@ -1,4 +1,4 @@
-export const list_customer = [
+export const List_customer = [
     {
         "id": "1",
         "name": "Yusron",
