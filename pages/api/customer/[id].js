@@ -1,4 +1,4 @@
-import { List_customer } from "../../customer";
+import { List_customer } from "../customer";
 
 
 export default function handler({query:{id}}, res) {
