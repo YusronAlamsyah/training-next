@@ -11,6 +11,7 @@ function Navbar() {
         <li><Link href="/ssr"><a>SSR</a></Link></li>
         <li><Link href="/isg"><a>ISG</a></Link></li>
         <li><Link href="/ssg"><a>SSG</a></Link></li>
+        <li><Link href="/apollo/category"><a>Apollo</a></Link></li>
     </ul>
   )
 }

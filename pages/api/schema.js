@@ -6,6 +6,7 @@ export const GET_CATEGORIES = gql`
       items{
         id
         name
+        image
       }
     }
   }
@@ -19,6 +20,10 @@ query getCategoryById($categoryId: Int) {
         items{
             sku
             name 
+            special_price
+            description{
+              html
+            }
         }
         total_count
     }

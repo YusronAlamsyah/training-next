@@ -21,11 +21,12 @@ function CategoryById() {
     return (
         <div className={styles.container}>
             <main className={styles.main}>
+                <h1>List Produk</h1>
                 <ol>
                     {
                         data.category.products.items.map((value, key) => (
                             <Link href={`../detail-product/${value.sku}`} key={key}>
-                                <a><li>{value.name}</li></a>
+                                <a><li>[{value.sku}] {value.name}</li></a>
                             </Link>
                         ))
                     }

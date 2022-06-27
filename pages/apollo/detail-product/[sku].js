@@ -1,13 +1,13 @@
 import React from 'react'
-import { useQuery,useMutation  } from "@apollo/client";
-import Link from 'next/link';
+import { useQuery, useMutation } from "@apollo/client";
 import styles from '@/styles/Home.module.css'
 import { useRouter } from 'next/router';
 import { ADD_SUBCRIBE, GET_PRODUCT_BY_ID } from '../../api/schema';
+import Image from 'next/image';
 
 
 function ProductById() {
-  
+
 
 
     let input;
@@ -34,6 +34,20 @@ function ProductById() {
         <div className={styles.container}>
             <main className={styles.main}>
                 <h1>{data2.products.items[0].name}</h1>
+                <p>Price : {data2.products.items[0].special_price}</p>
+
+
+                <Image
+                    src={data2.products.items[0].image.url}
+                    alt={data2.products.items[0].name}
+                    width={500}
+                    height={500}
+                    placeholder='blur'
+                    blurDataURL={data2.products.items[0].image.url}
+                    layout="responsive"
+                    objectFit='contain'
+                />
+
                 <form
                     onSubmit={e => {
                         e.preventDefault();
@@ -49,8 +63,8 @@ function ProductById() {
                     <button type="submit">Subcribe</button>
                 </form>
                 <div>
-                    {console.log("input",data)}
-                    { data && data.subscribe.status.message}
+                    {console.log("input", data)}
+                    {data && data.subscribe.status.message}
                 </div>
             </main>
         </div>
