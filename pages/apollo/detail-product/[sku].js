@@ -33,20 +33,18 @@ function ProductById() {
     return (
         <div className={styles.container}>
             <main className={styles.main}>
-                <h1>{data2.products.items[0].name}</h1>
-                <p>Price : {data2.products.items[0].special_price}</p>
-
-
-                <Image
+                
+            <Image
                     src={data2.products.items[0].image.url}
                     alt={data2.products.items[0].name}
                     width={500}
                     height={500}
-                    placeholder='blur'
-                    blurDataURL={data2.products.items[0].image.url}
-                    layout="responsive"
-                    objectFit='contain'
                 />
+                <h1>{data2.products.items[0].name}</h1>
+                <p>Price : {data2.products.items[0].special_price}</p>
+                <div className="content" dangerouslySetInnerHTML={{__html: data2.products.items[0].description.html}}></div>
+
+
 
                 <form
                     onSubmit={e => {
