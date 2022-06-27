@@ -3,7 +3,7 @@ import { useQuery,useMutation  } from "@apollo/client";
 import Link from 'next/link';
 import styles from '@/styles/Home.module.css'
 import { useRouter } from 'next/router';
-import { ADD_SUBCRIBE, GET_PRODUCT_BY_ID } from '../schema';
+import { ADD_SUBCRIBE, GET_PRODUCT_BY_ID } from '../../api/schema';
 
 
 function ProductById() {

@@ -1,7 +1,7 @@
 import React from 'react'
 import { useQuery } from "@apollo/client";
 import Link from 'next/link';
-import { GET_CATEGORIES } from './schema';
+import { GET_CATEGORIES } from '../api/schema';
 import styles from '@/styles/Home.module.css'
 
 

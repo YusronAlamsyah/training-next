@@ -3,7 +3,7 @@ import { useQuery } from "@apollo/client";
 import Link from 'next/link';
 import styles from '@/styles/Home.module.css'
 import { useRouter } from 'next/router';
-import { GET_CATEGORIES_BY_ID } from '../schema';
+import { GET_CATEGORIES_BY_ID } from '../../api/schema';
 
 
 function CategoryById() {
